@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" th:href="@{/static/libs/bootstrap/css/bootstrap.min.css}">
+    <script th:inline="javascript">var ctx = [[${#request.contextPath}]];</script>
+    <script th:src="@{/static/libs/jquery-3.3.1/jquery-3.3.1.js}"></script>
+    <script th:src="@{/static/libs/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/static/libs/layer/layer.js}"></script>
+    <script th:src="@{/static/libs/jquery-validation/dist/jquery.validate.min.js}"></script>
+    <script th:src="@{/static/libs/jquery-validation/dist/localization/messages_zh.js}"></script>
+    <script th:src="@{/static/js/common.js}"></script>
+    <script th:src="@{/static/js/user.js}"></script>
+</head>
+<body>
+<!--主页,增加和显示用户信息-->
+<div id="my_container">
+    <div class="col-md-2">
+        <a class="btn btn-block btn-primary" href="javascript:;" onclick="USER.add()">添加用户</a>
+        <a class="btn btn-block btn-primary" href="javascript:;" onclick="USER.show()">用户列表</a>
+    </div>
+    <div class="col-md-10" id="right"></div>
+</div>
+
+</body>
+</html>

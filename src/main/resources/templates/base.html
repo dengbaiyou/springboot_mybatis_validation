@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/static/libs/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+
+<div class="form-group" th:fragment="base_input(type,label,name,value)">
+    <label class="col-sm-2 control-label" th:text="${label}"></label>
+    <div class="col-sm-7">
+        <input class="form-control input-sm" th:type="${type}" th:attr="id=${name},name=${name}" th:value="${value}">
+    </div>
+    <div class="col-sm-3 web-error-tip"></div>
+</div>
+
+<div class="form-group" th:fragment="base_button_one(click,value)">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-7">
+        <button id="submitButton" type="button" class="btn btn-primary btn-block" th:attr="onclick=${click}"
+                th:text="${value}"></button>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+</body>
+</html>

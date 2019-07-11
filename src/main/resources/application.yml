@@ -1,0 +1,19 @@
+student:
+  name: "lisi"
+  age: 18
+
+#三个短横线用来分割文档快 三个document
+#spring:
+#  profiles:
+#    active: dev
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8888
+---
+spring:
+  profiles: prod
+server:
+  port: 8889
