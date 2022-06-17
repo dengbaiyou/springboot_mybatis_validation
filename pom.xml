@@ -18,7 +18,7 @@
         <pagehelper-version>1.2.12</pagehelper-version>
         <th.mybatis-version>2.1.5</th.mybatis-version>
         <druid-version>1.1.17</druid-version>
-        <fastjson-version>1.2.58</fastjson-version>
+        <fastjson-version>1.2.83</fastjson-version>
     </properties>
 
     <dependencies>
